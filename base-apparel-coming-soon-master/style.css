@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:200,400,600&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(
+		135deg,
+		hsl(0, 0%, 100%),
+		hsl(0, 100%, 98%)
+	);
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	min-height: 100vh;
+}
+
+.left {
+	background-image: url('/images/bg-pattern-desktop.svg');
+	background-size: cover;
+	background-position: center center;
+	padding: 0 40px 40px;
+	width: 60%;
+}
+
+.inner-container {
+	max-width: 450px;
+	margin: auto;
+}
+
+.right {
+	width: 40%;
+}
+
+.bg-image {
+	background-image: url('images/hero-desktop.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+.logo {
+	margin: 60px 0;
+	width: 200px;
+}
+
+.bg-mobile {
+	display: none;
+}
+
+h1 {
+	color: hsl(0, 6%, 24%);
+	font-size: 60px;
+	letter-spacing: 10px;
+	line-height: 1.1;
+	margin-bottom: 0;
+	transform: translateX(-100%);
+	text-transform: uppercase;
+	animation: comeinleft 0.5s ease forwards;
+}
+
+h1 span {
+	color: hsl(0, 36%, 70%);
+	font-weight: 200;
+}
+
+p {
+	color: hsl(0, 36%, 70%);
+	line-height: 26px;
+	margin: 30px 0;
+	transform: translateX(100%);
+	opacity: 0;
+	animation: comeinright 0.5s ease forwards;
+}
+
+form {
+	position: relative;
+	transform: translateX(-100%);
+	animation: comeinleft 0.5s ease forwards;
+}
+
+input {
+	background-color: transparent;
+	border: 1px solid hsl(0, 36%, 70%);
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 15px 30px;
+	height: 55px;
+	width: 100%;
+}
+
+input:focus {
+	border-width: 2px;
+	box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
+	outline: none;
+}
+
+input::placeholder {
+	color: hsl(0, 36%, 70%);
+}
+
+form.error input {
+	border: 2px solid hsl(0, 93%, 68%);
+}
+
+button {
+	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: opacity 0.2s ease;
+	height: 55px;
+	width: 100px;
+}
+
+button:hover {
+	opacity: 0.6;
+}
+
+.error-icon {
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 110px;
+}
+
+form.error .error-icon {
+	display: block;
+}
+
+small {
+	color: hsl(0, 93%, 68%);
+	display: none;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+form.error small {
+	display: block;
+}
+
+/* Animations */
+@keyframes comeinleft {
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes comeinright {
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.logo {
+		margin: 30px 0;
+		width: 100px;
+	}
+
+	.bg-mobile {
+		display: block;
+		margin-left: -40px;
+		margin-right: -40px;
+		width: calc(100% + 80px);
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	.left {
+		width: 100%;
+	}
+
+	.right {
+		display: none;
+	}
+}
