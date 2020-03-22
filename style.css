@@ -24,20 +24,22 @@ ul {
 
 ul li {
 	margin: 20px;
-	width: 300px;
+	width: 400px;
 }
 
 ul li a {
 	color: #000;
-	font-size: 14px;
+	font-size: 18px;
 	text-decoration: none;
 }
 
 ul li a img {
-	height: 200px;
-	width: 300px;
+	display: block;
 	object-fit: cover;
+	margin-bottom: 15px;
 	transition: transform 0.3s ease;
+	height: 300px;
+	width: 400px;
 }
 
 ul li a:hover img {
