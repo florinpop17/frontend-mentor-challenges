@@ -1,24 +1,50 @@
 const projects = [
-	'four-card-feature-section-master',
-	'base-apparel-coming-soon-master',
-	'intro-component-with-signup-form-master',
-	'single-price-grid-component-master',
-	'ping-coming-soon-page-master'
+	{
+		name: 'four-card-feature-section-master',
+		youtube:
+			'https://www.youtube.com/watch?v=PcSUEo0P0GU&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=2&t=0s'
+	},
+	{
+		name: 'base-apparel-coming-soon-master',
+		youtube:
+			'https://www.youtube.com/watch?v=8A7-0gsbHA0&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=3&t=0s'
+	},
+	{
+		name: 'signup-form-master',
+		youtube:
+			'https://www.youtube.com/watch?v=bFOuUypjkSM&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=4&t=0s'
+	},
+	{
+		name: 'single-price-grid-component-master',
+		youtube:
+			'https://www.youtube.com/watch?v=pbsvhVPFHX0&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=5&t=0s'
+	},
+	{
+		name: 'ping-coming-soon-page-master',
+		youtube:
+			'https://www.youtube.com/watch?v=kvsmBV19Sz0&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=6&t=0s'
+	}
 ];
 
 const list = document.getElementById('list');
 
-projects.forEach((project, i) => {
+projects.forEach(({ name, youtube }, i) => {
 	const listItem = document.createElement('li');
-	const link = document.createElement('a');
-	link.href = `/${project}/index.html`;
-	link.innerText = `${i + 1}. ${formatProjectName(project)}`;
 
-	const img = document.createElement('img');
-	img.src = `/${project}/design/desktop-design.jpg`;
+	listItem.innerHTML = `
+		<img src="/${name}/design/desktop-design.jpg"/>
+		<p>${i + 1}. ${formatProjectName(name)}</p>
 
-	link.prepend(img);
-	listItem.appendChild(link);
+		<div class="links-container">
+			<a href="/${name}/index.html" class="blue">
+				<i class="fas fa-eye"></i>
+			</a>
+			<a href="${youtube}" class="youtube">
+				<i class="fab fa-youtube"></i>
+			</a>
+		</div>
+	`;
+
 	list.appendChild(listItem);
 });
 
