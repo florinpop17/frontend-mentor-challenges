@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(0, 100%, 74%);
+	background-image: url('./images/bg-intro-desktop.png');
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+	min-height: 100vh;
+}
+
+.container > div {
+	flex: 1;
+	padding: 0 20px;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 50px;
+}
+
+p {
+	font-size: 15px;
+	opacity: 0.8;
+}
+
+.box {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+	padding: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.box p {
+	margin: 0;
+}
+
+.box-blue {
+	background-color: hsl(248, 32%, 49%);
+	padding: 20px;
+}
+
+.form-control {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.form-control small {
+	color: hsl(0, 100%, 74%);
+	font-weight: 600;
+	position: absolute;
+	bottom: -24px;
+	right: 0;
+	opacity: 0;
+	text-align: right;
+}
+
+input {
+	border-radius: 5px;
+	border: 1.3px solid hsl(246, 25%, 77%);
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 15px 25px;
+	display: block;
+	width: 100%;
+}
+
+.form-control.error input {
+	border-color: hsl(0, 100%, 74%);
+	color: hsl(0, 100%, 74%);
+}
+
+.form-control.error input::placeholder {
+	color: hsl(0, 100%, 74%);
+}
+
+input:focus {
+	border: 1.3px solid hsl(248, 32%, 49%);
+	outline: none;
+}
+
+.form-control img {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	height: 20px;
+}
+
+.form-control.error img {
+	opacity: 1;
+}
+
+button {
+	background-color: hsl(154, 59%, 51%);
+	border-radius: 5px;
+	border: 1px solid hsl(154, 59%, 45%);
+	box-shadow: 0 2px hsl(154, 59%, 45%);
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 15px 25px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:active {
+	box-shadow: 0 0 hsl(154, 59%, 45%);
+	transform: translateY(2px);
+}
+
+.form-control small {
+	opacity: 0;
+}
+
+.form-control.error small {
+	opacity: 1;
+}
+
+small {
+	display: block;
+	color: #bbb;
+	font-size: 11px;
+	font-weight: 500;
+	margin-top: 15px;
+}
+
+small a {
+	color: hsl(0, 100%, 74%);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+}
