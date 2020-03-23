@@ -50,6 +50,11 @@ ul li {
 	width: 350px;
 }
 
+ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
 ul li img {
 	display: block;
 	object-fit: cover;
