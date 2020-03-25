@@ -23,6 +23,11 @@ const projects = [
 		name: 'ping-coming-soon-page-master',
 		youtube:
 			'https://www.youtube.com/watch?v=kvsmBV19Sz0&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=6&t=0s'
+	},
+	{
+		name: 'huddle-landing-page-with-alternating-feature-blocks-master',
+		youtube:
+			'https://www.youtube.com/watch?v=wnb-BfjR-oo&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=7&t=0s'
 	}
 ];
 
