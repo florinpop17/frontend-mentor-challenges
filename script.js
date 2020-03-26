@@ -28,6 +28,11 @@ const projects = [
 		name: 'huddle-landing-page',
 		youtube:
 			'https://www.youtube.com/watch?v=wnb-BfjR-oo&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=7&t=0s'
+	},
+	{
+		name: 'huddle-simple-landing',
+		youtube:
+			'https://www.youtube.com/watch?v=ObrYwPRyeqc&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=7&t=0s'
 	}
 ];
 
