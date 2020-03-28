@@ -32,12 +32,17 @@ const projects = [
 	{
 		name: 'huddle-simple-landing',
 		youtube:
-			'https://www.youtube.com/watch?v=ObrYwPRyeqc&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=7&t=0s'
+			'https://www.youtube.com/watch?v=ObrYwPRyeqc&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=8&t=0s'
 	},
 	{
 		name: 'fylo-landing-page',
 		youtube:
-			'https://www.youtube.com/watch?v=a9-Ro9rc7E4&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=7&t=0s'
+			'https://www.youtube.com/watch?v=a9-Ro9rc7E4&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=9&t=0s'
+	},
+	{
+		name: 'insure-landing-page',
+		youtube:
+			'https://www.youtube.com/watch?v=9HVKR_hK0nY&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=10&t=0s'
 	}
 ];
 
