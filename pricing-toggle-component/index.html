@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Prices Component</title>
+
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Our Pricing</h1>
+
+			<div class="toggle-container">
+				<span>Annually</span>
+				<span>
+					<input type="checkbox" name="toggle" id="toggle" unchecked />
+					<label for="toggle">
+						<div class="ball"></div>
+					</label>
+				</span>
+				<span>Monthly</span>
+			</div>
+
+			<div id="flexy" class="flex">
+				<div class="price-box">
+					<h4>Basic</h4>
+					<p>
+						<span class="monthly">
+							&dollar;19.99
+						</span>
+						<span class="annually">
+							&dollar;199.99
+						</span>
+					</p>
+					<ul>
+						<li>500 GB Storage</li>
+						<li>2 Users Allowed</li>
+						<li>Send up to 3 GB</li>
+					</ul>
+					<button>Learn More</button>
+				</div>
+
+				<div class="price-box price-box-premium">
+					<h4>Professional</h4>
+					<p>
+						<span class="monthly">
+							&dollar;24.99
+						</span>
+						<span class="annually">
+							&dollar;249.99
+						</span>
+					</p>
+					<ul>
+						<li>1 TB Storage</li>
+						<li>5 Users Allowed</li>
+						<li>Send up to 10 GB</li>
+					</ul>
+					<button>Learn More</button>
+				</div>
+
+				<div class="price-box">
+					<h4>Master</h4>
+					<p>
+						<span class="monthly">
+							&dollar;39.99
+						</span>
+						<span class="annually">
+							&dollar;399.99
+						</span>
+					</p>
+					<ul>
+						<li>2 TB Storage</li>
+						<li>10 Users Allowed</li>
+						<li>Send up to 20 GB</li>
+					</ul>
+					<button>Learn More</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
