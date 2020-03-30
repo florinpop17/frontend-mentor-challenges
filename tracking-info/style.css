@@ -175,6 +175,8 @@ main {
 		cursor: pointer;
 		border: none;
 		display: block;
+		position: relative;
+		z-index: 99;
 	}
 
 	.hamburger:hover {
@@ -246,6 +248,6 @@ main {
 
 	.illustration {
 		transform: scale(1) translateX(0%);
-		margin: 100px 0 50px;
+		margin: 0 0 50px;
 	}
 }
