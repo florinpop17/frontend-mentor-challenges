@@ -53,6 +53,11 @@ const projects = [
 		name: 'tracking-info',
 		youtube:
 			'https://www.youtube.com/watch?v=71HM728Mul4&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=11&t=0s'
+	},
+	{
+		name: 'clipboard-landing-page',
+		youtube:
+			'https://www.youtube.com/watch?v=aZeKU7xoT0w&list=PLgBH1CvjOA63Xvt0BaeQ7zL4KXX96Wbgp&index=11&t=0s'
 	}
 ];
 

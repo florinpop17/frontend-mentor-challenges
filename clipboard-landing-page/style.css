@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--strong-cyan: hsl(171, 66%, 44%);
+	--light-blue: hsl(233, 100%, 69%);
+	--dark-grayish-blue: hsl(210, 10%, 33%);
+	--grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+	color: var(--dark-grayish-blue);
+	font-family: 'Bai Jamjuree', sans-serif;
+	margin: 0;
+	text-align: center;
+}
+
+header {
+	background-image: url('./images/bg-header-desktop.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 0 20px;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	color: var(--grayish-blue);
+	line-height: 1.5;
+}
+
+.container {
+	padding: 0 20px;
+	margin: 30px auto;
+	max-width: 100%;
+	width: 1200px;
+}
+
+.container-small {
+	width: 700px;
+}
+
+section {
+	padding: 30px 0;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.flex > * {
+	flex: 1;
+	padding: 10px;
+}
+
+.m4 {
+	margin: 100px auto;
+}
+
+.btn {
+	border: none;
+	border-radius: 50px;
+	color: #fff;
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 35px;
+	margin: 15px 5px;
+}
+
+.btn-primary {
+	background-color: var(--strong-cyan);
+	box-shadow: 0 4px hsl(171, 68%, 36%);
+}
+
+.btn-secondary {
+	background-color: var(--light-blue);
+	box-shadow: 0 4px hsl(233, 71%, 61%);
+}
+
+footer {
+	background-color: hsl(0, 0%, 93%);
+}
+
+footer img {
+	width: 60px;
+}
+
+footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	list-style-type: none;
+}
+
+footer .container {
+	margin-bottom: 0;
+}
+
+footer ul a {
+	color: var(--dark-grayish-blue);
+	text-decoration: none;
+}
+
+footer .links {
+	flex: 3;
+}
+
+footer .links li {
+	padding: 10px;
+	margin-right: 40px;
+}
+
+footer .social li {
+	margin: 0 5px;
+}
+
+footer .social a {
+	font-size: 24px;
+	margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+	.flex {
+		flex-direction: column;
+	}
+
+	footer .links {
+		flex-direction: column;
+	}
+
+	footer .links li {
+		padding: 10px;
+		margin-right: 0;
+	}
+}
